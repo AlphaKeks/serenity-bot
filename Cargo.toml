@@ -1,0 +1,15 @@
+[package]
+name = "serenity-bot"
+version = "0.1.0"
+edition = "2021"
+license-file = "./LICENSE"
+
+[dependencies]
+dotenv = "0.15"
+anyhow = "1"
+log = "0.4"
+simple_logger = "2.3"
+
+tokio = { version = "1", features = ["full"] }
+
+serenity = { version = "0.11", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
